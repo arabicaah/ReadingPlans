@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Guide — Bible Timeline Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif-title { font-family: 'Cinzel', serif; }
+  </style>
+</head>
+<body class="bg-stone-100 text-stone-900 min-h-screen">
+
+  <!-- Header (Consistent with App) -->
+  <header class="bg-stone-900 text-stone-100 sticky top-0 z-30 shadow-lg border-b border-stone-800">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/20 border border-amber-500/40 flex items-center justify-center text-amber-400 font-serif-title font-bold text-lg shrink-0">✝</div>
+          <h1 class="font-serif-title text-base sm:text-lg font-bold tracking-wide text-amber-400">Bible Tracker Help</h1>
+        </a>
+      </div>
+      <a href="index.html" class="text-xs font-semibold bg-stone-800 hover:bg-stone-700 text-stone-200 px-3 py-1.5 rounded-lg border border-stone-700 transition">
+        ← Back to Tracker
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+    
+    <!-- Hero Section -->
+    <section class="text-center space-y-4">
+      <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-stone-900">User Guide</h2>
+      <p class="text-stone-600 max-w-2xl mx-auto">Everything you need to know to track your reading progress, save your reflections, and secure your data.</p>
+    </section>
+
+    <!-- Quick Navigation -->
+    <nav class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      <a href="#started" class="p-3 bg-white border border-stone-200 rounded-xl text-center text-sm font-medium hover:border-amber-500 hover:text-amber-600 transition">Getting Started</a>
+      <a href="#tracking" class="p-3 bg-white border border-stone-200 rounded-xl text-center text-sm font-medium hover:border-amber-500 hover:text-amber-600 transition">Tracking Progress</a>
+      <a href="#navigating" class="p-3 bg-white border border-stone-200 rounded-xl text-center text-sm font-medium hover:border-amber-500 hover:text-amber-600 transition">Navigation</a>
+      <a href="#data" class="p-3 bg-white border border-stone-200 rounded-xl text-center text-sm font-medium hover:border-amber-500 hover:text-amber-600 transition">Data & Backups</a>
+    </nav>
+
+    <!-- Section: Getting Started -->
+    <section id="started" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">1</span>
+        <h3 class="text-xl font-bold text-stone-900">Getting Started</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+        <p>The tracker runs entirely in your browser. There is no account to create and no installation required.</p>
+        <div class="grid gap-4">
+          <div class="p-4 bg-stone-50 rounded-lg border-l-4 border-amber-500">
+            <span class="block font-bold text-sm uppercase text-amber-800 mb-1">90-Day Plan</span>
+            <p class="text-sm text-stone-600">Focuses on the narrative flow of salvation history using the narrative books of the Bible.</p>
+          </div>
+          <div class="p-4 bg-stone-50 rounded-lg border-l-4 border-stone-500">
+            <span class="block font-bold text-sm uppercase text-stone-800 mb-1">365-Day Plan</span>
+            <p class="text-sm text-stone-600">A comprehensive journey designed to take you through the entire Bible over one full year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Tracking -->
+    <section id="tracking" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">2</span>
+        <h3 class="text-xl font-bold text-stone-900">Tracking Your Progress</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-6">
+        <div class="space-y-3">
+          <h4 class="font-bold text-stone-800">Marking Readings as Complete</h4>
+          <ul class="list-disc list-inside text-sm text-stone-600 space-y-2 ml-2">
+            <li><strong>Individual Passages:</strong> Click on a specific scripture reference to toggle its completion status.</li>
+            <li><strong>Quick Complete:</strong> Click the <strong>✓ Complete Day</strong> button to mark all readings for that day as finished instantly.</li>
+            <li><strong>Progress Bar:</strong> Track your total percentage of completion at the top of the screen.</li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="font-bold text-stone-800">Daily Reflections</h4>
+          <p class="text-sm text-stone-600">Click the <strong>✎ Reflection</strong> button on any day to open the notes modal. You can write prayers, study insights, or personal thoughts here. Once saved, a "Note" badge will appear on that day's card.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Navigation -->
+    <section id="navigating" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">3</span>
+        <h3 class="text-xl font-bold text-stone-900">Navigation & Tools</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm grid gap-6 sm:grid-cols-2">
+        <div class="space-y-2">
+          <h4 class="font-bold text-stone-800 flex items-center gap-2">
+            <span class="text-amber-600">★</span> Up Next Spotlight
+          </h4>
+          <p class="text-sm text-stone-600">The top card always shows you the first uncompleted day, so you can jump straight into your reading.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-stone-800 flex items-center gap-2">
+            <span class="text-amber-600">★</span> Era Filters
+          </h4>
+          <p class="text-sm text-stone-600">Filter the timeline by historical periods (e.g., "Exodus" or "The Church") using the color-coded pills.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-stone-800 flex items-center gap-2">
+            <span class="text-amber-600">★</span> Search Bar
+          </h4>
+          <p class="text-sm text-stone-600">Instantly find specific books or jump to a day number by typing in the search field.</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold text-stone-800 flex items-center gap-2">
+            <span class="text-amber-600">★</span> Grid View
+          </h4>
+          <p class="text-sm text-stone-600">Switch to "Grid" mode for a high-level visual overview of your entire year's progress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Data -->
+    <section id="data" class="space-y-4">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">4</span>
+        <h3 class="text-xl font-bold text-stone-900">Data & Backups</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-6">
+        <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl">
+          <h4 class="font-bold text-amber-900 flex items-center gap-2 mb-2">
+            ⚠️ Important: Local Storage
+          </h4>
+          <p class="text-sm text-amber-800">
+            Your progress is saved in your browser's <strong>Local Storage</strong>. This means your data is private and never leaves your device. However, if you clear your browser's cache or "site data," <strong>your progress will be deleted.</strong>
+          </p>
+        </div>
+        
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="space-y-2">
+            <h4 class="font-bold text-stone-800">How to Export</h4>
+            <p class="text-sm text-stone-600">Click the <strong>Export</strong> button in the header. This downloads a <code>.json</code> file to your device. We recommend doing this weekly and saving the file to a cloud drive (Google Drive, Dropbox, etc.).</p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="font-bold text-stone-800">How to Restore</h4>
+            <p class="text-sm text-stone-600">Click the <strong>Restore</strong> button and select your backup <code>.json</code> file. This will immediately restore all your checkboxes and reflections.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Tip -->
+    <section class="bg-stone-900 text-stone-100 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="space-y-1">
+        <h3 class="font-bold text-amber-400">Using on Mobile?</h3>
+        <p class="text-sm text-stone-400">You can "Add to Home Screen" from your browser menu to use this like a native app.</p>
+      </div>
+      <a href="index.html" class="whitespace-nowrap px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-sm font-bold rounded-lg transition">
+        Start Reading
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-10 text-stone-400 text-xs">
+    &copy; Bible Timeline Tracker &bull; Local-First Privacy
+  </footer>
+
+</body>
+</html>
