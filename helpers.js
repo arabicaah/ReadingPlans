@@ -175,7 +175,7 @@
 
     function getActiveDays() {
       // Lazy processing: ensure data is processed for the active plan
-      if (!processedDays[state.plan] && isDataLoaded) {
+      if (!processedDays[state.plan].length && isDataLoaded) {
         if (state.plan === '90') {
           process90Plan();
         } else if (state.plan === '365') {
@@ -209,7 +209,7 @@
       }
 
       // Process the data for the new plan if not already done
-      if (!processedDays[planId]) {
+      if (!processedDays[planId].length) {
         if (planId === '90') {
           process90Plan();
         } else if (planId === '365') {
